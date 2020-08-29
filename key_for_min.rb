@@ -4,7 +4,7 @@ require "pry"
 # Given a hash with numeric values, return the key for the smallest value
 
 def key_for_min_value(name_hash)
-    min_value = 10000
+    min_value = Float::INFINITY
     new_hash = {}
     binding.pry
     name_hash.each do |k, v|
