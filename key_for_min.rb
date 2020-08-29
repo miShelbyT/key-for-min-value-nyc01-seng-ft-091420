@@ -6,7 +6,6 @@ require "pry"
 def key_for_min_value(name_hash)
     min_value = Float::INFINITY
     new_hash = {}
-    binding.pry
     name_hash.each do |k, v|
     binding.pry
     if name_hash[v] < min_value
