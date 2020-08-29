@@ -6,6 +6,7 @@ require "pry"
 def key_for_min_value(name_hash)
     min_value = 10000
     new_hash = {}
+    binding.pry
     name_hash.each do |k, v|
     if name_hash[v] < min_value
       name_hash[min_value] = name_hash[v]
