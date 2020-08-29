@@ -6,7 +6,6 @@ require "pry"
 def key_for_min_value(name_hash)
     min_value = Float::INFINITY
     min_key = nil
-    new_hash = {}
     name_hash.each do |k, v|
     if v < min_value
       min_value = v
