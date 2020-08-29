@@ -6,7 +6,7 @@ def key_for_min_value(name_hash)
     new_hash = {}
     name_hash.each do |k, v|
     if name_hash[v] < min_value
-      name_hash[k][min_value] = name_hash[k][v]
+      name_hash[min_value] = name_hash[v]
       new_hash[0][0] = name_hash[k][min_value]
     end
       new_hash[k]
